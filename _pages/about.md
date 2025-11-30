@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: 罗筱溪 [ɕiɑʊ21 ɕi55 luo35]
 
 profile:
   align: right
