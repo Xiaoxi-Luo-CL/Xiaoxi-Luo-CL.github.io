@@ -419,16 +419,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-my-paper-phonetic-reconstruction-of-the-consonant-system-of-middle-chinese-via-mixed-integer-optimization-has-been-accepted-to-tacl",
+          title: 'My paper Phonetic Reconstruction of the Consonant System of Middle Chinese via Mixed...',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-i-received-vector-scholarships-in-artificial-intelligence-vsai-here-is-a-post",
+          title: 'I received Vector Scholarships in Artificial Intelligence (VSAI)! Here is a post',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
