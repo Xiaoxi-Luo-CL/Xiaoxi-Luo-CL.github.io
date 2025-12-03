@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I will start my internship in the General Alignment team at MiniMax!
+I started my internship in the General Alignment team at MiniMax!
