@@ -30,12 +30,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "nav-cv",
-          title: "cv",
-          description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
+        },{id: "nav-中文博客",
+          title: "中文博客",
+          description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/cv/";
+            window.location.href = "/cn-blog/index.html";
           },
         },{id: "post-discussion-on-日-category",
         
@@ -75,8 +75,13 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-i-will-start-my-internship-in-the-general-alignment-team-at-minimax",
-          title: 'I will start my internship in the General Alignment team at MiniMax!',
+            },},{id: "cn_posts-hello-world",
+          title: 'Hello World',
+          description: "",
+          section: "Cn_posts",handler: () => {
+              window.location.href = "/cn_posts/2025-12-03-try/";
+            },},{id: "news-i-started-my-internship-in-the-general-alignment-team-at-minimax",
+          title: 'I started my internship in the General Alignment team at MiniMax!',
           description: "",
           section: "News",},{id: "news-my-paper-phonetic-reconstruction-of-the-consonant-system-of-middle-chinese-via-mixed-integer-optimization-has-been-published-on-tacl",
           title: 'My paper Phonetic Reconstruction of the Consonant System of Middle Chinese via Mixed...',
