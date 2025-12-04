@@ -85,8 +85,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: Xiaoxi's Blogs # blog_name will be displayed in your blog page
+blog_description: My ideas, notes, and memories.
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -262,9 +262,11 @@ jekyll-archives:
       year: "/cn-blog/:year/"
       tags: "/cn-blog/tags/:name/"
       categories: "/cn-blog/categories/:name/"
-  
-display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
-display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
+
+display_tags: []
+display_categories: []
+# display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
+# display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar

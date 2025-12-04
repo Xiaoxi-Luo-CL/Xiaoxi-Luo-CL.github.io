@@ -3,7 +3,7 @@ layout: page
 title: 中文博客
 permalink: /cn-blog/
 nav: true
-nav_order: 5
+nav_order: 4
 pagination:
   enabled: true
   collection: cn_posts
@@ -20,7 +20,7 @@ pagination:
 
   <div class="header-bar">
     <h1>中文博客</h1>
-    <h2>这里记录我的中文随笔与思考</h2>
+    <h2>文章主要来自本科时写的课程论文。</h2>
   </div>
 
   <ul class="post-list">
