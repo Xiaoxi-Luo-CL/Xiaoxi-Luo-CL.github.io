@@ -254,8 +254,8 @@ jekyll-archives:
       year: "/blog/:year/"
       tags: "/blog/:type/:name/"
       categories: "/blog/:type/:name/"
-  books:
-    enabled: [year, tags, categories]
+  # books:
+  #   enabled: [year, tags, categories]
   # cn_posts: # my chinese blogs
   #   enabled: [year, tags, categories]
   #   permalinks:
