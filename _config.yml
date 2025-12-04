@@ -256,12 +256,12 @@ jekyll-archives:
       categories: "/blog/:type/:name/"
   books:
     enabled: [year, tags, categories]
-  cn_posts: # my chinese blogs
-    enabled: [year, tags, categories]
-    permalinks:
-      year: "/cn-blog/:year/"
-      tags: "/cn-blog/tags/:name/"
-      categories: "/cn-blog/categories/:name/"
+  # cn_posts: # my chinese blogs
+  #   enabled: [year, tags, categories]
+  #   permalinks:
+  #     year: "/cn-blog/:year/"
+  #     tags: "/cn-blog/tags/:name/"
+  #     categories: "/cn-blog/categories/:name/"
   
 display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
 display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
