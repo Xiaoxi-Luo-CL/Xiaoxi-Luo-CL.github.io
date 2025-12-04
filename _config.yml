@@ -151,6 +151,7 @@ collections:
     output: true
   projects:
     output: true
+  
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -256,7 +257,7 @@ jekyll-archives:
     enabled: [year, tags, categories]
   cn_posts: # my chinese blogs
     enabled: [year, tags, categories]
-    permalink:
+    permalinks:
       year: "/cn-blog/:year/"
       tags: "/cn-blog/tags/:name/"
       categories: "/cn-blog/categories/:name/"
