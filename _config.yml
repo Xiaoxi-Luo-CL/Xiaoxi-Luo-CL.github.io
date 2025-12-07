@@ -258,8 +258,8 @@ jekyll-archives:
   # books:
   #   enabled: [year, tags, categories]
   chinese_posts: # my chinese blogs
-    enabled: [year, tags, categories]
-    # enabled: []
+    # enabled: [year, tags, categories]
+    enabled: []
     permalinks:
       year: "/chinese-blog/:year/"
       tags: "/chinese-blog/tags/:name/"

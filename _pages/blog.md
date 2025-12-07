@@ -14,6 +14,7 @@ pagination:
   trail:
     before: 1 # The number of links before the current page
     after: 3 # The number of links after the current page
+
 ---
 
 <div class="post">
@@ -24,32 +25,10 @@ pagination:
 {% if blog_name_size > 0 or blog_description_size > 0 %}
 
   <div class="header-bar">
-    <h1>Xiaoxi's Blog</h1>
-    <!-- <h2>{{ site.blog_description }}</h2> -->
+    <h1>{{ site.blog_name }}</h1>
+    <h2>{{ site.blog_description }}</h2>
   </div>
   {% endif %}
-
-<div class="tag-category-list" style="text-align: center; margin-bottom: 20px;">
-  <ul class="p-0 m-0">
-    {% for tag in site.tags %}
-      {% assign english_posts_count = 0 %}
-      {% for post in tag[1] %}
-        {% if post.collection.label == 'posts' %}
-          {% assign english_posts_count = english_posts_count | plus: 1 %}
-        {% endif %}
-      {% endfor %}
-
-      {% if english_posts_count > 0 %}
-        <li style="display: inline-block; margin: 0 5px;">
-          <i class="fa-solid fa-hashtag fa-sm"></i> 
-          <a href="{{ tag[0] | slugify | prepend: '/blog/tag/' | relative_url }}">
-            {{ tag[0] }}
-          </a>
-        </li>
-      {% endif %}
-    {% endfor %}
-  </ul>
-</div>
 
 {% if site.display_tags and site.display_tags.size > 0 or site.display_categories and site.display_categories.size > 0 %}
 

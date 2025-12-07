@@ -2,6 +2,7 @@
 layout: default 
 permalink: /chinese-blog/
 title: 中文博客 
+subtitle: 文章主要来自本科课程论文。本人学识有限，不免挂一漏万，君子谅焉。
 nav: true
 nav_order: 4
 pagination:
@@ -14,15 +15,20 @@ pagination:
   trail:
     before: 1
     after: 3
+    
 ---
 
 
 <div class="post">
 
-  <div class="header-bar">
-    <h1>中文博客</h1>
-    <h2>文章主要来自本科课程论文。本人学识有限，不免挂一漏万，君子谅焉。</h2>
-  </div>
+  {% if page.title %}
+  <h1>{{ page.title }}</h1>
+  {% endif %}
+
+  {% if page.subtitle %}
+  <h2>{{ page.subtitle }}</h2>
+  {% endif %}
+
   
   <div class="tag-category-list" style="text-align: center; margin-bottom: 20px;">
     <ul class="p-0 m-0">
