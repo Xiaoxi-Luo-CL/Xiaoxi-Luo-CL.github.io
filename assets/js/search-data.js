@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "A growing collection of your cool projects.",
+          description: "A growing collection of my projects, mostly coursework.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -41,7 +41,7 @@ ninja.data = [{
         
           title: "Discussion on 日 category",
         
-        description: "try",
+        description: "Some discussions of our paper.",
         section: "Posts",
         handler: () => {
           
@@ -53,9 +53,9 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "cn_posts-hello-world",
-          title: 'Hello World',
-          description: "",
+            },},{id: "cn_posts-引繩批根-考",
+          title: '“引繩批根”考',
+          description: "2020年秋季秋季學期古代漢語讀書札記。對《史記·魏其武安侯列傳》中難以索解的“引繩批根”一詞进行了注解和探討。",
           section: "Cn_posts",handler: () => {
               window.location.href = "/cn_posts/2025-12-03-try/";
             },},{id: "news-i-started-my-internship-in-the-general-alignment-team-at-minimax",
