@@ -57,7 +57,7 @@ ninja.data = [{
           title: '“引繩批根”考',
           description: "2020年秋季秋季學期古代漢語讀書札記。對《史記·魏其武安侯列傳》中難以索解的“引繩批根”一詞进行了注解和探討。",
           section: "Cn_posts",handler: () => {
-              window.location.href = "/cn_posts/2025-12-03-try/";
+              window.location.href = "/cn_posts/2025-12-03-2020ancient-chinese/";
             },},{id: "news-i-started-my-internship-in-the-general-alignment-team-at-minimax",
           title: 'I started my internship in the General Alignment team at MiniMax!',
           description: "",
