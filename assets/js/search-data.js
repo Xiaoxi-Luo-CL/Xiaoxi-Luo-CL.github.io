@@ -48,9 +48,14 @@ ninja.data = [{
               window.location.href = "/books/the_godfather/";
             },},{id: "chinese_posts-引繩批根-考",
           title: '“引繩批根”考',
-          description: "2020年秋季秋季學期古代漢語讀書札記。對《史記·魏其武安侯列傳》中難以索解的“引繩批根”一詞进行了注解和探討。",
+          description: "",
           section: "Chinese_posts",handler: () => {
-              window.location.href = "/chinese_posts/2025-12-03-2020ancient-chinese/";
+              window.location.href = "/chinese_posts/2025-12-03-yinshengpigen/";
+            },},{id: "chinese_posts-對讀-老子-思考一則",
+          title: '對讀《老子》思考一則',
+          description: "2021年春季古代漢語讀書筆記。",
+          section: "Chinese_posts",handler: () => {
+              window.location.href = "/chinese_posts/2025-12-03-laozi/";
             },},{id: "news-i-started-my-internship-in-the-general-alignment-team-at-minimax",
           title: 'I started my internship in the General Alignment team at MiniMax!',
           description: "",
