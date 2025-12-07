@@ -30,13 +30,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "nav-中文博客",
-          title: "中文博客",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/chinese-blog/index.html";
-          },
         },{id: "post-discussion-on-日-category",
         
           title: "Discussion on 日 category",
