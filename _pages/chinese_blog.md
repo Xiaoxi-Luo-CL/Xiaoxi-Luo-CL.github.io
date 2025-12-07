@@ -1,13 +1,13 @@
 ---
 layout: default
 title: 中文博客
-permalink: /cn-blog/
+permalink: /chinese-blog/
 nav: true
 nav_order: 4
 pagination:
   enabled: true
-  collection: cn_posts
-  permalink: /cn-blog/page/:num/
+  collection: chinese_posts
+  permalink: /chinese-blog/page/:num/
   per_page: 5
   sort_field: date
   sort_reverse: true
