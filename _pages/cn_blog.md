@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: 中文博客
 permalink: /cn-blog/
 nav: true
@@ -20,7 +20,7 @@ pagination:
 
   <div class="header-bar">
     <h1>中文博客</h1>
-    <h2>文章主要来自本科时写的课程论文。</h2>
+    <h2>文章主要来自本科课程论文。本人学识有限，不免挂一漏万，君子谅焉。</h2>
   </div>
 
   <ul class="post-list">

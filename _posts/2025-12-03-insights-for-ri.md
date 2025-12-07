@@ -2,9 +2,9 @@
 layout: post
 title: Discussion on 日 category
 date: 2025-12-03
-description: try
-tags: formatting links
-categories: sample-posts
+description: Some discussions of our paper.
+tags: compling 
+categories: research
 ---
 
 Our approach provides a novel way to find evidence to understand the past phonological status and therefore the ways that they can change.
