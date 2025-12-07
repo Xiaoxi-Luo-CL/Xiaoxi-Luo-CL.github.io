@@ -6,8 +6,7 @@ tags: [古代汉语]
 description: "2020年秋季秋季學期古代漢語讀書札記。對《史記·魏其武安侯列傳》中難以索解的“引繩批根”一詞进行了注解和探討。"
 ---
 
-<div style="font-family: 'Songti SC', 'SimSun', '宋体', serif; font-size: 1.1rem; line-height: 1.8;">
-
+<div style="font-family: 'Songti SC', 'SimSun', '宋体', serif; font-size: 1.1rem; line-height: 1.8;" markdown="1">
 《魏其武安侯列傳》中有這樣一段：
 
 > “灌夫家居雖富，然失勢，卿相侍中賓客益衰。及魏其侯失勢，亦欲倚灌夫引繩批根生平慕之後棄之者。灌夫亦倚魏其而通列侯宗室為名高。兩人相為引重，其游如父子然。相得歡甚，無厭，恨相知晚也。”
