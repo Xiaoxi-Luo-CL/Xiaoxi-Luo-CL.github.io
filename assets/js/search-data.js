@@ -53,6 +53,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
+            },},{id: "chinese_posts-從古律相融的角度看韋應物五言詩歌",
+          title: '從古律相融的角度看韋應物五言詩歌',
+          description: "本文探討了韋應物五言詩“以古入律”与“以律入古”的特點與藝術效果。",
+          section: "Chinese_posts",handler: () => {
+              window.location.href = "/chinese_posts/2021-01-10-weiyingwu/";
             },},{id: "chinese_posts-引繩批根-考",
           title: '“引繩批根”考',
           description: "2020年秋季學期古代漢語讀書札記。對《史記·魏其武安侯列傳》中難以索解的“引繩批根”一詞进行了注解和探討。",
