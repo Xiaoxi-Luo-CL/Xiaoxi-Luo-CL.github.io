@@ -30,33 +30,27 @@ pagination:
   {% endif %}
 
 <div class="tag-category-list" style="text-align: center; margin-bottom: 20px;">
-    <ul class="p-0 m-0">
-      {% for tag in site.tags %}
-        {% assign count = 0 %}
-        {% for post in tag[1] %}{% if post.collection == 'posts' %}{% assign count = count | plus: 1 %}{% endif %}{% endfor %}
-        {% if count > 0 %}
-          <li style="display: inline-block; margin: 0 5px;">
-            <i class="fa-solid fa-hashtag fa-sm"></i> 
-            <a href="{{ tag[0] | slugify | prepend: '/blog/tag/' | relative_url }}">{{ tag[0] }}</a>
-          </li>
+  <ul class="p-0 m-0">
+    {% for tag in site.tags %}
+      {% assign english_posts_count = 0 %}
+      {% for post in tag[1] %}
+        {% if post.collection.label == 'posts' %}
+          {% assign english_posts_count = english_posts_count | plus: 1 %}
         {% endif %}
       {% endfor %}
-    </ul>
-    
-    <ul class="p-0 m-0" style="margin-top: 10px;">
-      {% for category in site.categories %}
-        {% assign count = 0 %}
-        {% for post in category[1] %}{% if post.collection == 'posts' %}{% assign count = count | plus: 1 %}{% endif %}{% endfor %}
-        {% if count > 0 %}
-          <li style="display: inline-block; margin: 0 5px;">
-            <i class="fa-solid fa-folder fa-sm"></i> 
-            <a href="{{ category[0] | slugify | prepend: '/blog/category/' | relative_url }}">{{ category[0] }}</a>
-          </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </div>
-  
+
+      {% if english_posts_count > 0 %}
+        <li style="display: inline-block; margin: 0 5px;">
+          <i class="fa-solid fa-hashtag fa-sm"></i> 
+          <a href="{{ tag[0] | slugify | prepend: '/blog/tag/' | relative_url }}">
+            {{ tag[0] }}
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
+
 {% if site.display_tags and site.display_tags.size > 0 or site.display_categories and site.display_categories.size > 0 %}
 
   <div class="tag-category-list">
