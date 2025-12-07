@@ -74,7 +74,7 @@ ninja.data = [{
               window.location.href = "/projects/1_project/";
             },},{id: "projects-empirically-testing-the-boundaries-of-the-frequency-principle",
           title: 'Empirically Testing the Boundaries of the Frequency Principle',
-          description: "Xu (2019) and Rahaman (2019) proposed frequency principle. To what extent does it hold?",
+          description: "Xu (2019) and Rahaman (2019) propose that deep neural networks often fit target functions from low to high frequencies during the training process. To what extent does this principle hold?",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
             },},{
