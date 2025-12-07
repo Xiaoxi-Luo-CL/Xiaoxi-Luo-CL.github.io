@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Empirically Testing the Boundaries of the Frequency Principle
-description: Xu (2019) and Rahaman (2019) proposed frequency principle. To what extent does it hold?
+description: Xu (2019) and Rahaman (2019) propose that deep neural networks often fit target functions from low to high frequencies during the training process. To what extent does this principle hold?
 img: assets/img/proj-spectral-bias/intro-F-principle-zhiqin.png
 importance: 1
 category: coursework
@@ -13,7 +13,7 @@ Here is the [github repo](https://github.com/Xiaoxi-Luo-CL/On-the-Universality-o
 
 ## Introduction
 
-Deep neural networks often fit target functions from low to high frequencies during the training process. Two concurrent and independent works, Xu et al. (2019) and Rahaman et al. (2019), observed and proved this phenomenon, naming it as *Frequency Principle* and *Spectral Bias*,  respectively. Below is an illustration of frequency principle from Xu (2020): If we use a neural network $h(t)$ to fit the target function $f(x) = \sin(x) + \sin(3x) + \sin(5x)$, using Fourier Transform to decompose both $f$ and $h(t)$ into frequency spectrum and tracking the relative error with respect to the different frequencies, we will find that errors corresponding to lower frequency drop faster.
+Deep neural networks often fit target functions from low to high frequencies during the training process. Two concurrent and independent works, Xu et al. (2019) and Rahaman et al. (2019), observed and proved this phenomenon, naming it as *Frequency Principle* and *Spectral Bias*, respectively. Below is an illustration of frequency principle from Xu (2020): If we use a neural network $h(t)$ to fit the target function $f(x) = \sin(x) + \sin(3x) + \sin(5x)$, using Fourier Transform to decompose both $f$ and $h(t)$ into frequency spectrum and tracking the relative error with respect to the different frequencies, we will find that errors corresponding to lower frequency drop faster.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -140,7 +140,7 @@ Results show that Frequency Principle persists, even in Transformers.
         {% include figure.liquid loading="eager" path="assets/img/proj-spectral-bias/filter_50.png" title="$\delta=50.00$" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/proj-spectral-bias/filter_100.00.png" title="$\delta=100.00$" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/proj-spectral-bias/filter_100.png" title="$\delta=100.00$" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -150,3 +150,17 @@ Results show that Frequency Principle persists, even in Transformers.
 ## Conclusion
 It is interesting to observe that neural networks,ranging from simple MLPs to Transformers, consistently prioritize learning simpler and smoother components of the target function.
 Based on these preliminary experiments, I hypothesize that the Frequency Principle is a universal property of neural networks. However, given that this study relied on several approximation methods, more rigorous investigation is required to establish conclusive evidence.
+
+### Reference
+Yuan Cao, Zhiying Fang, Yue Wu, Ding-Xuan Zhou, and Quanquan Gu. Towards understanding
+the spectral bias of deep learning, 2020. URL https://arxiv.org/abs/1912.01198.
+
+Tao Luo, Zheng Ma, Zhi-Qin John Xu, and Yaoyu Zhang. Theory of the frequency principle for
+general deep neural networks, 2019. URL https://arxiv.org/abs/1906.09235.
+
+Zhi-Qin John Xu, Yaoyu Zhang, and Yanyang Xiao. Training behavior of deep neural network in
+frequency domain, 2019. URL https://arxiv.org/abs/1807.01251.
+
+Zhi-Qin Xu, Yaoyu Zhang, Tao Luo, Yanyang Xiao, and Zheng Ma. Frequency principle: Fourier
+analysis sheds light on deep neural networks. Communications in Computational Physics, 28(5):
+1746–1767, June 2020.
