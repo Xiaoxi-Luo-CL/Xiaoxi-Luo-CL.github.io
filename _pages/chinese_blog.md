@@ -1,20 +1,5 @@
----
-layout: default
-title: 中文博客
-permalink: /chinese-blog/
-nav: true
-nav_order: 4
-pagination:
-  enabled: true
-  collection: chinese_posts
-  permalink: /chinese-blog/page/:num/
-  per_page: 5
-  sort_field: date
-  sort_reverse: true
-  trail:
-    before: 1
-    after: 3
----
+
+
 
 <div class="post">
 
@@ -28,7 +13,7 @@ pagination:
     {% if page.pagination.enabled %}
       {% assign postlist = paginator.posts %}
     {% else %}
-      {% assign postlist = site.cn_posts | sort: 'date' | reverse %}
+      {% assign postlist = site.chinese_posts | sort: 'date' | reverse %}
     {% endif %}
 
     {% for post in postlist %}
