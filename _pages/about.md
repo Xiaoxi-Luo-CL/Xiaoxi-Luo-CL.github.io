@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: 罗筱溪 [luo35 ɕiɑʊ21 ɕi55]
+subtitle: Xiaoxi [ɕiɑʊ21 ɕi55] Luo [luo35], "罗筱溪" in Chinese
 
 profile:
   align: right
