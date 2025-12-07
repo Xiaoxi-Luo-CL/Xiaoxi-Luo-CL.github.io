@@ -1,4 +1,20 @@
-
+---
+layout: default 
+permalink: /chinese-blog/
+title: 中文博客 
+nav: true
+nav_order: 4
+pagination:
+  enabled: true
+  collection: chinese_posts
+  permalink: /chinese-blog/page/:num/
+  per_page: 5
+  sort_field: date
+  sort_reverse: true
+  trail:
+    before: 1
+    after: 3
+---
 
 
 <div class="post">
@@ -41,14 +57,14 @@
         </p>
 
         <p class="post-tags">
-          <a href="{{ year | prepend: '/cn-blog/' | relative_url }}">
+          <a href="{{ year | prepend: '/chinese-blog/' | relative_url }}">
             <i class="fa-solid fa-calendar fa-sm"></i> {{ year }}
           </a>
 
           {% if tags != "" %}
           &nbsp; &middot; &nbsp;
             {% for tag in post.tags %}
-            <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">
+            <a href="{{ tag | slugify | prepend: '/chinese-blog/tags/' | relative_url }}">
               <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}
             </a>
             {% unless forloop.last %} &nbsp; {% endunless %}
