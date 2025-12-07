@@ -250,6 +250,7 @@ terser:
 jekyll-archives:
   posts:
     enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
+    # enabled: []
     permalinks:
       year: "/blog/:year/"
       tags: "/blog/:type/:name/"
@@ -258,6 +259,7 @@ jekyll-archives:
   #   enabled: [year, tags, categories]
   chinese_posts: # my chinese blogs
     enabled: [year, tags, categories]
+    # enabled: []
     permalinks:
       year: "/chinese-blog/:year/"
       tags: "/chinese-blog/tags/:name/"

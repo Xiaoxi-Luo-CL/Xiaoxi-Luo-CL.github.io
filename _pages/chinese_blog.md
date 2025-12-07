@@ -24,6 +24,34 @@ pagination:
     <h2>文章主要来自本科课程论文。本人学识有限，不免挂一漏万，君子谅焉。</h2>
   </div>
 
+<div class="tag-category-list" style="text-align: center; margin-bottom: 20px;">
+    <ul class="p-0 m-0">
+      {% for tag in site.tags %}
+        {% assign count = 0 %}
+        {% for post in tag[1] %}{% if post.collection == 'chinese_posts' %}{% assign count = count | plus: 1 %}{% endif %}{% endfor %}
+        {% if count > 0 %}
+          <li style="display: inline-block; margin: 0 5px;">
+            <i class="fa-solid fa-hashtag fa-sm"></i> 
+            <a href="{{ tag[0] | slugify | prepend: '/chinese-blog/tags/' | relative_url }}">{{ tag[0] }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+    <ul class="p-0 m-0" style="margin-top: 10px;">
+      {% for category in site.categories %}
+        {% assign count = 0 %}
+        {% for post in category[1] %}{% if post.collection == 'chinese_posts' %}{% assign count = count | plus: 1 %}{% endif %}{% endfor %}
+        {% if count > 0 %}
+          <li style="display: inline-block; margin: 0 5px;">
+            <i class="fa-solid fa-folder fa-sm"></i> 
+            <a href="{{ category[0] | slugify | prepend: '/chinese-blog/categories/' | relative_url }}">{{ category[0] }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+
   <ul class="post-list">
 
     {% if page.pagination.enabled %}
