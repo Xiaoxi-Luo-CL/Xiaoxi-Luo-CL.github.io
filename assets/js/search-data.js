@@ -67,51 +67,16 @@ ninja.data = [{
           section: "News",},{id: "news-i-received-vector-scholarships-in-artificial-intelligence-vsai-here-is-a-post",
           title: 'I received Vector Scholarships in Artificial Intelligence (VSAI)! Here is a post',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "News",},{id: "projects-gibbs-sampling-and-variational-inference-for-hdp-hmm",
+          title: 'Gibbs Sampling and Variational Inference for HDP-HMM',
+          description: "PoS tagging is essential for NLP tasks, yet supervised methods depend heavily on annotated data. Unsupervised methods like Hierarchical Dirichlet Process Hidden Markov Models (HDP-HMM) offer a promising alternative. This study provides a detailed derivation of a Gibbs sampling and a variational inference algorithm for HDP-HMM and implements the code.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+            },},{id: "projects-empirically-testing-the-boundaries-of-the-frequency-principle",
+          title: 'Empirically Testing the Boundaries of the Frequency Principle',
+          description: "Xu (2019) and Rahaman (2019) proposed frequency principle. To what extent does it hold?",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
             },},{
         id: 'social-cv',
         title: 'CV',
