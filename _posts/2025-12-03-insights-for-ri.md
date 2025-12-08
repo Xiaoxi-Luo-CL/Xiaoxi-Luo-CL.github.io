@@ -1,8 +1,8 @@
 ---
 layout: post
-title: A Case Study on the 日 [ɻʅ51] Category
+title: A Case Study on the 日 [ɻ ʅ51] Category
 date: 2025-12-03
-description: A Case Study on the 日 [ɻʅ51] Category based on Luo and Sun (2025)
+description: A Case Study on the 日 [ɻ ʅ51] Category based on Luo and Sun (2025)
 tags:
   - compling
 categories:
@@ -11,7 +11,7 @@ categories:
 
 Reconstruction in historical linguistics often relies on expert knowledge and qualitative reasoning. [Luo and Sun (2025)](https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00742/128937/Phonetic-Reconstruction-of-the-Consonant-System-of) formalized the reconstruction as a mixed integer optimization problem, with the objective designed as maximizing coherence to historical evidence (e.g., ancient rhyme dictionaries), and consistency with descendants (modern Chinese dialects). Experiments on synthetic data validated the effectiveness of our method.
 
-Our approach provides a novel way to find evidence to understand the past phonological status and therefore the ways that they can change. The new evidence resulted from our algorithm may be of linguistic interest. Here, we show a case study on the **日** [ɻʅ51] category[^1] to demonstrate some promising points.
+Our approach provides a novel way to find evidence to understand the past phonological status and therefore the ways that they can change. The new evidence resulted from our algorithm may be of linguistic interest. Here, we show a case study on the **日** [ɻ ʅ51] category[^1] to demonstrate some promising points.
 
 The reconstruction of the **日** category has been a challenge in Chinese historical phonology, mainly because its pronunciation in different dialects vary a lot (see the **IPA** row in Table 1). Moreover, even a single character in one dialect may have various pronunciations (Karlgren, 1926).
 
@@ -51,7 +51,7 @@ The result may be also consultable to find diachronic change patterns. We show t
 
 > **Note:** We demonstrate the comparison between MC and 12 dialects: Beijing, Xi'an, Wuhan, Chengdu, Yangzhou (Mandarin), Suzhou (Wu), Changsha (Xiang), Nanchang (Gan), Meixian (Hakka), Guangzhou (Yue), Xiamen, Chaozhou (Min). Each column provides information of the initial "日" in a language/dialect denoted by its first row.
 >
-> In the **MC** column, the 14 numbers represent the average vector of the reconstructed phonetic value of all the characters with initial "日" in MC. The **IPA** grid is the IPA phoneme of which the phonetic vector is most similar with the average vector. In other columns (BJ–CZ), the **IPA** grid contains all the initials in the current dialect with initial "日" in MC, and the following 14 numbers is the average phonetic vector of initials in this dialect. For MC to any dialect, the features changed with an absolute value $\ge 0.5$ are marked in <span style="color: #0070C0">**blue**</span> .
+> In the **MC** column, the 14 numbers represent the average vector of the reconstructed phonetic value of all the characters with initial "日" in MC. The **IPA** grid is the IPA phoneme of which the phonetic vector is most similar with the average vector. In other columns (BJ–CZ), the **IPA** grid contains all the initials in the current dialect with initial "日" in MC, and the following 14 numbers is the average phonetic vector of initials in this dialect. For MC to any dialect, the features changed with an absolute value $\ge 0.5$ are marked in <span style="color: #0070C0">**bold**</span> .
 
 ---
 
