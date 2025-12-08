@@ -70,7 +70,7 @@ ninja.data = [{
               window.location.href = "/chinese_posts/2021-04-01-laozi/";
             },},{id: "chinese_posts-讀-孟子-札記一則",
           title: '讀《孟子》札記一則',
-          description: "2022年春季學期《孟子·萬章上》“又帥天下諸侯以爲堯三年喪”語法分析。",
+          description: "2022年春季學期古代漢語讀書札記。《孟子·萬章上》“又帥天下諸侯以爲堯三年喪”語法分析。",
           section: "Chinese_posts",handler: () => {
               window.location.href = "/chinese_posts/2021-06-16-mengzi/";
             },},{id: "news-i-started-my-internship-in-the-general-alignment-team-at-minimax",
