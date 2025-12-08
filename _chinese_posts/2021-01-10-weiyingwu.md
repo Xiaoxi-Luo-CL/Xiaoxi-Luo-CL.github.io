@@ -1,12 +1,13 @@
 ---
 layout: post
-title: 從古律相融的角度看韋應物五言詩歌
+title: "從古律相融的角度看韋應物五言詩歌"
 date: 2021-01-10
 description: "2020年秋季學期中國古代文學史（二）課程論文。本文探討了韋應物五言詩“以古入律”与“以律入古”的特點與藝術效果。"
 # tags:
 #   - 古代文學
 # categories:
 #   - coursework
+
 ---
 
 <div style="font-family: 'Songti SC', 'SimSun', '宋体', serif; font-size: 1.1rem; line-height: 1.8;" markdown="1">
