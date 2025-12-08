@@ -19,7 +19,6 @@ pagination:
 ---
 
 <style>
-/* 尝试同时匹配常见的 al-folio 标题类名，如果真实项目用别的 class 请替换 */
 .blog-title, .page-title, .archive-title {
   display: none !important;
 }
@@ -173,15 +172,14 @@ pagination:
       </h3>
       <p>{{ post.description }}</p>
       <p class="post-meta">
-        {{ read_time }} min read &nbsp; &middot; &nbsp;
+        <!-- {{ read_time }} min read &nbsp; &middot; &nbsp; -->
         {{ post.date | date: '%B %d, %Y' }}
         {% if post.external_source %}
         &nbsp; &middot; &nbsp; {{ post.external_source }}
         {% endif %}
       </p>
       <p class="post-tags">
-        <a href="{{ year | prepend: '/chinese-blog/' | relative_url }}">
-          <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
+          <i class="fa-solid fa-calendar fa-sm"></i> {{ year }}
 
           {% if tags != "" %}
           &nbsp; &middot; &nbsp;
