@@ -18,6 +18,37 @@ pagination:
 
 ---
 
+<style>
+/* 尝试同时匹配常见的 al-folio 标题类名，如果真实项目用别的 class 请替换 */
+.blog-title, .page-title, .archive-title {
+  display: none !important;
+}
+/* 仅在中文博客页面自定义的标题样式（与你主题风格接近） */
+.chinese-blog-header {
+  text-align: center;
+  margin: 2.5rem 0;
+}
+.chinese-blog-header h1 {
+  font-size: 4.5rem;
+  color: #c215b3; /* 保持你主题的大标题紫色，如果想要别的换这里 */
+  font-weight: 300;
+  margin: 0;
+}
+.chinese-blog-header h2 {
+  font-size: 1.1rem;
+  color: #666;
+  font-weight: 300;
+  margin-top: 0.8rem;
+}
+</style>
+
+<div class="chinese-blog-header">
+  <h1>{{ page.title | escape }}</h1>
+  {% if page.subtitle %}
+  <h2>{{ page.subtitle | escape }}</h2>
+  {% endif %}
+</div>
+
 <div class="post">
 
 {% assign blog_name_size = site.blog_name | size %}

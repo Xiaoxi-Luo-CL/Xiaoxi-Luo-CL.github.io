@@ -2,9 +2,11 @@
 layout: post
 title: “引繩批根”考
 date: 2021-01-10
-tags: [古代漢語]
 description: "2020年秋季學期古代漢語讀書札記。對《史記·魏其武安侯列傳》中難以索解的“引繩批根”一詞进行了注解和探討。"
-categories: coursework
+# tags:
+#   - 古代漢語
+# categories:
+#   - coursework
 ---
 
 <div style="font-family: 'Songti SC', 'SimSun', '宋体', serif; font-size: 1.1rem; line-height: 1.8;" markdown="1">
