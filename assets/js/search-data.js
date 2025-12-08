@@ -37,11 +37,11 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/chinese-blog/index.html";
           },
-        },{id: "post-a-case-study-on-the-日-ɻʅ51-category",
+        },{id: "post-a-case-study-on-the-日-ɻ-ʅ51-category",
         
-          title: "A Case Study on the 日 [ɻʅ51] Category",
+          title: "A Case Study on the 日 [ɻ ʅ51] Category",
         
-        description: "A Case Study on the 日 [ɻʅ51] Category based on Luo and Sun (2025)",
+        description: "A Case Study on the 日 [ɻ ʅ51] Category based on Luo and Sun (2025)",
         section: "Posts",
         handler: () => {
           
