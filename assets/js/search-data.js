@@ -37,11 +37,11 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/chinese-blog/index.html";
           },
-        },{id: "post-discussion-on-日-category",
+        },{id: "post-a-case-study-on-the-日-ɻʅ51-category",
         
-          title: "Discussion on 日 category",
+          title: "A Case Study on the 日 [ɻʅ51] Category",
         
-        description: "Some discussions of our paper.",
+        description: "A Case Study on the 日 [ɻʅ51] Category based on Luo and Sun (2025)",
         section: "Posts",
         handler: () => {
           
@@ -65,7 +65,7 @@ ninja.data = [{
               window.location.href = "/chinese_posts/2021-01-10-yinshengpigen/";
             },},{id: "chinese_posts-對讀-老子-思考一則",
           title: '對讀《老子》思考一則',
-          description: "2021年春季學期古代漢語讀書筆記。",
+          description: "2021年春季學期古代漢語讀書札記。",
           section: "Chinese_posts",handler: () => {
               window.location.href = "/chinese_posts/2021-04-01-laozi/";
             },},{id: "chinese_posts-讀-孟子-札記一則",
