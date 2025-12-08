@@ -9,6 +9,8 @@ description: "2020年秋季學期古代漢語讀書札記。對《史記·魏其
 #   - coursework
 ---
 
+（作者注：本文爲2020年秋季學期古代漢語（上）讀書札記。）
+
 <div style="font-family: 'Songti SC', 'SimSun', '宋体', serif; font-size: 1.1rem; line-height: 1.8;" markdown="1">
 《魏其武安侯列傳》中有這樣一段：
 
