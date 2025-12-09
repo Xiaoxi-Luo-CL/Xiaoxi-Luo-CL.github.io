@@ -49,9 +49,9 @@ However, real-world tasks involve high-dimensional inputs. In high-dimensional s
 
 The core idea relies on the Convolution Theorem: applying a low-pass filter in the frequency domain is equivalent to performing a convolution in the spatial domain, so we could approximate a low-pass filter by convolution.
 
-+ Ideally, we apply a low-pass filter $\hat{G}_{\sigma(\omega)}$ in the frequency domain: $\hat{f}_{\text{low}, \sigma} = \hat{f} \cdot \hat{G}_\sigma$.
++ Ideally, we apply a low-pass filter $\hat{G}\_{\sigma(\omega)}$ in the frequency domain: $\hat{f}\_{\text{low}, \sigma} = \hat{f} \cdot \hat{G}\_\sigma$.
 + We choose a Gaussian kernel, as its inverse is also a Gaussian kernel, then the low-frquency component would be: 
-        $f_{\text{low},\delta}(x) = \mathcal{F}^{-1}\{\hat{f}(\omega) \cdot \hat{G}_{\sigma(\omega)}\} = (f * G_\delta)(x)$
+        $f\_{\text{low},\delta}(x) = \mathcal{F}^{-1}\{\hat{f}(\omega) \cdot \hat{G}\_{\sigma(\omega)}\} = (f * G_\delta)(x)$
 + The $\delta$ acts as the "bandwidth": a large $\delta$ (wide kernel) results in strong smoothing and extracts global, low-frequency components, while a small $\delta$ retains high-frequency details.            
 
 This convolution is defined by the integral:
