@@ -8,7 +8,6 @@ category: coursework
 giscus_comments: true
 ---
 
-# Empirically Testing the Boundaries of the Frequency Principle
 Here is the [github repo](https://github.com/Xiaoxi-Luo-CL/On-the-Universality-of-Frequency-Principle)!
 
 ## Introduction
@@ -50,9 +49,9 @@ However, real-world tasks involve high-dimensional inputs. In high-dimensional s
 
 The core idea relies on the Convolution Theorem: applying a low-pass filter in the frequency domain is equivalent to performing a convolution in the spatial domain, so we could approximate a low-pass filter by convolution.
 
-+ Ideally, we apply a low-pass filter $\hat{G}_\sigma(\omega)$ in the frequency domain: $\hat{f}_{\text{low}, \sigma} = \hat{f} \cdot \hat{G}_\sigma$.
++ Ideally, we apply a low-pass filter $\hat{G}_{\sigma(\omega)}$ in the frequency domain: $\hat{f}_{\text{low}, \sigma} = \hat{f} \cdot \hat{G}_\sigma$.
 + We choose a Gaussian kernel, as its inverse is also a Gaussian kernel, then the low-frquency component would be: 
-        $f_{\text{low},\delta}(x) = \mathcal{F}^{-1}\{\hat{f}(\omega) \cdot \hat{G}_\sigma(\omega)\} = (f * G_\delta)(x)$
+        $f_{\text{low},\delta}(x) = \mathcal{F}^{-1}\{\hat{f}(\omega) \cdot \hat{G}_{\sigma(\omega)}\} = (f * G_\delta)(x)$
 + The $\delta$ acts as the "bandwidth": a large $\delta$ (wide kernel) results in strong smoothing and extracts global, low-frequency components, while a small $\delta$ retains high-frequency details.            
 
 This convolution is defined by the integral:
@@ -64,7 +63,7 @@ We approximate the convolution integral at a point $x_i$ using a discrete, norma
 $$y_{\text{low}, \delta}(x_i) \approx \frac{\sum_{j=1}^N y_j G_\delta(x_i - x_j)}{\sum_{j=1}^N G_\delta(x_i - x_j)}.$$
 
 The exact form of Gaussian kernel is
-$G_\delta(x_i - x_j) = \exp\left(-\frac{\|x_i - x_j\|^2}{2\delta^2}\right),$
+$G_\delta(x_i - x_j) = \exp\left(-\frac{\|\|x_i - x_j\|\|^2}{2\delta^2}\right),$
 where the denominator $C_i = \sum_j G_\delta(x_i - x_j)$ is a normalization factor.
 
 Finally, the high-frequency component is simply the residual: 
@@ -72,7 +71,7 @@ $$y_{\text{high}, \delta}(x_i) = y_i - y_{\text{low}, \delta}(x_i).$$
 
 The F-Principle is then verified by showing that the network's error on the $y_{\text{low}}$ components converges much faster than the error on the $y_{\text{high}}$ components, across a series of $\delta$. Specifically,
 
-$e_{\text{low}}(t, \delta) = \frac{||f_{\text{low},\delta} - h_{\text{low},\delta}(t)||_F}{||f_{\text{low},\delta}||_F}, \quad e_{\text{high}}(t, \delta) = \frac{||f_{\text{high},\delta} - h_{\text{high},\delta}(t)||_F}{||f_{\text{high},\delta}||_F}$
+$e_{\text{low}}(t, \delta) = \frac{\|\|f_{\text{low},\delta} - h_{\text{low},\delta}(t)\|\|_F}{\|\|f_{\text{low},\delta}\|\|_F}, \quad e_{\text{high}}(t, \delta) = \frac{\|\|f_{\text{high},\delta} - h_{\text{high},\delta}(t)\|\|_F}{\|\|f_{\text{high},\delta}\|\|_F}$
 
 
 ## Experiments: Spectral Bias in Language Modeling
