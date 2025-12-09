@@ -71,7 +71,7 @@ $$y_{\text{high}, \delta}(x_i) = y_i - y_{\text{low}, \delta}(x_i).$$
 
 The F-Principle is then verified by showing that the network's error on the $y_{\text{low}}$ components converges much faster than the error on the $y_{\text{high}}$ components, across a series of $\delta$. Specifically,
 
-$e_{\text{low}}(t, \delta) = \frac{\|\|f_{\text{low},\delta} - h_{\text{low},\delta}(t)\|\|_F}{\|\|f_{\text{low},\delta}\|\|_F}, \quad e_{\text{high}}(t, \delta) = \frac{\|\|f_{\text{high},\delta} - h_{\text{high},\delta}(t)\|\|_F}{\|\|f_{\text{high},\delta}\|\|_F}$
+$e_{\text{low}}(t, \delta) = \frac{\|\|f_{\text{low},\delta} - h_{\text{low},\delta}(t)\|\|_{F}}{\|\|f_{\text{low},\delta}\|\|_{F}}, \quad e_{\text{high}}(t, \delta) = \frac{\|\|f_{\text{high},\delta} - h_{\text{high},\delta}(t)\|\|_{F}}{\|\|f_{\text{high},\delta}\|\|_{F}}$
 
 
 ## Experiments: Spectral Bias in Language Modeling
